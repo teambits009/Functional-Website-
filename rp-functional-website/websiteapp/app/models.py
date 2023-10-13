@@ -6,13 +6,13 @@ class Attendance(models.Model):
       StudentName= models.CharField(max_length=200, null=True)
       StudentId = models.CharField(max_length=50, null=True)
       LecturesAttended = models.IntegerField(null=True)
-      TotalLectures = models.IntergerField(null=True)
+      TotalLectures = models.IntegerField(null=True)
 
       def __str__ (self):
         return self.StudentName
 
 class Marks(models.Model):
-      StudentName= models.Charfield(max_length=200,null=True)
+      StudentName= models.CharField(max_length=200,null=True)
       StudentId= models.CharField(max_length=50, null= True)
       PhysicsMarks = models.IntegerField(null=True)
       ChemistryMarks= models.IntegerField(null=True)
