@@ -1,7 +1,8 @@
 from django.shortcuts import redirect, render 
 from django.contrib.auth import login, logout, authenticate 
 from django.http import HttpResponse 
-from .forms import * 
+from .forms import addAttendanceform, addMarksform,addNoticeform
+from .models import *
 
 def home(request):
     notice = Notice.objects.all()

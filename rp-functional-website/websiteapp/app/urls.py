@@ -14,11 +14,11 @@ path
  
 from django.contrib import admin 
 from django. urls import path 
-from app.views import *
-from .views import loginPage,logoutPage,registerPage
+#from app.views import *
+from .views import loginPage,logoutPage,registerPage,home,addAttendance,addMarks,addNotice
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+
     path('',home ,name='home'),
 
     path('addAttendance/', addAttendance, name= 'addAttendance'),

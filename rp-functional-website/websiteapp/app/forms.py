@@ -21,4 +21,4 @@ class addMarksform(ModelForm):
 class addNoticeform(ModelForm) :
      class Meta:
           model= Notice
-          fiedls="__all__"
+          fields="__all__"
